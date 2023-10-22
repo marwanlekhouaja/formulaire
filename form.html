@@ -11,22 +11,26 @@
         <div class="card">
             <a class="singup">Sign Up</a>
             <div class="inputBox">
-                <input type="text" required="required">
+                <input type="text" id="username" onmouseleave="validName()" required="required">
+                <div id="alertUsername"></div>
                 <span>Username</span>
             </div>
             <div class="inputBox1">
-                <input type="email" required="required">
-                <span class="user">Email</span>
+                <input type="email" id="email" onmouseleave="validEmail()" required="required">
+                <div id="alertEmail"></div>
+                <span class="user" id="email">Email</span>
             </div>
 
             <div class="inputBox">
-                <input type="password" required="required">
+                <input type="password" id="password" onmouseleave="validPassword()" required="required">
+                <div id="alertPassword"></div>
                 <span>Password</span>
             </div>
 
-            <button class="enter">Enter</button>
+            <button class="enter" onclick="enter()">Enter</button>
 
         </div>
     </div>
+    <script src="interaction.js"></script>
 </body>
 </html>
